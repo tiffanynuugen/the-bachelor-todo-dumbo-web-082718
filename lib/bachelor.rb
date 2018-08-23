@@ -13,8 +13,8 @@ end
 
 def get_contestant_name(data, occupation)
    data.each do |season, people|
-    array.each do |contestant|
-      people.each do |info, description|
+    people.each do |contestant|
+      contestant.each do |info, description|
         if description == occupation
           return contestant["name"]
         end
