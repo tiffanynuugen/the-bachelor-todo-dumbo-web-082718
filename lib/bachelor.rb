@@ -13,6 +13,7 @@ end
 
 def get_contestant_name(data, occupation)
   data[occupation].each do |a, b|
+    binding.pry
 end
 
 def count_contestants_by_hometown(data, hometown)
