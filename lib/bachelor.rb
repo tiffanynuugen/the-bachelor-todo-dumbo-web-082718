@@ -15,7 +15,6 @@ def get_contestant_name(data, occupation)
    data.each do |season, people|
     array.each do |contestant|
       people.each do |info, description|
-        binding.pry
         if description == occupation
           return contestant["name"]
         end
