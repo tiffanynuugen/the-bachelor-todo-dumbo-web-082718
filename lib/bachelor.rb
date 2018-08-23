@@ -12,7 +12,8 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  data[occupation].each do |a, b|
+  data[occupation].each do |a|
+    a.each do |b, d|
     binding.pry
 end
 
