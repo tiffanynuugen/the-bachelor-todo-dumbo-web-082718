@@ -1,11 +1,11 @@
 require 'pry'
 
 def get_first_name_of_season_winner(data, season)
-  data[season].each do |people|
-       people.each do |k,v|
+  data[season].each do |info|
+       info.each do |k,v|
          binding.pry
         if v == "Winner"
-          full_name = people["name"]
+          full_name = info["name"]
           return full_name.split(' ').first
       end
     end
