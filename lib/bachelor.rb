@@ -30,11 +30,13 @@ def count_contestants_by_hometown(data, hometown)
     people.each do |contestant|
      contestant.each do |info, description|
      if description == hometown
-    counter += 1
+      counter += 1
+    end
    end
   end
  end
 end
+counter
 
 def get_occupation(data, hometown)
   # code here
