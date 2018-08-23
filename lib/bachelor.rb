@@ -12,12 +12,12 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-   data.each do |season, array|
-    array.each do |people|
-      people.each do |k,v|
+   data.each do |season, people|
+    array.each do |contestant|
+      people.each do |info, description|
         binding.pry
-        if v == occupation
-          return people["name"]
+        if description == occupation
+          return contestant["name"]
         end
       end
     end
