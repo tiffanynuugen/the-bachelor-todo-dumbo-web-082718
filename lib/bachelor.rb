@@ -31,11 +31,11 @@ def count_contestants_by_hometown(data, hometown)
      if description == hometown
       counter += 1
     end
+    counter
    end
   end
  end
 end
-counter
 
 def get_occupation(data, hometown)
   # code here
