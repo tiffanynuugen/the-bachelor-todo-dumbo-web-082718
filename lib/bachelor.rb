@@ -3,6 +3,7 @@ require 'pry'
 def get_first_name_of_season_winner(data, season)
   data[season].each do |contestant|
        contestant.each do |info, description|
+         binding.pry
         if description == "Winner"
           full_name = contestant["name"]
           return full_name.split(' ').first
